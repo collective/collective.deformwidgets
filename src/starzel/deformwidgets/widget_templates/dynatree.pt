@@ -1,0 +1,16 @@
+<span tal:omit-tag="">
+    <div class="editornote">
+      ${description | None}
+    </div>
+    <div id="${field.oid}">
+    </div>
+    <script type="text/javascript">
+      deform.addCallback(
+        '${field.oid}',
+        function(oid) {
+            starzel_deformwidgets.initDynaTree(oid, ${tree}, ${preselected}, ${select_mode}, "${item_name}", "${item_child_name}");
+
+        }
+      );
+    </script>
+</span>

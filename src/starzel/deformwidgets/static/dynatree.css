@@ -1,0 +1,31 @@
+/* deform dynatree features */
+ul.dynatree-readonly {
+    line-height: 2;
+}
+
+ul.dynatree-readonly li.head {
+    cursor:pointer;
+}
+ul.dynatree-readonly li{
+    background-color: #FAFAFA;
+    border: 2px solid #CCCCCC;
+    display: inline;
+    margin: 0 4px 0 0;
+    padding:1px;
+}
+
+ul.dynatree-readonly li .nowrap{
+    white-space: nowrap;
+}
+
+ul.dynatree-readonly .ui-button{
+    vertical-align: middle;
+    margin-left:0.1em;
+}
+ul.dynatree-readonly .ui-button .ui-button-text{
+    padding: 0 0.5em;
+    font-size: 90%;
+    line-height: 1;
+    color:red;
+}
+
