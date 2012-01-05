@@ -32,10 +32,10 @@
                       '<input class="start" id="' + oid + '-selectedItems" type="hidden" name="__start__" value="' + sequence_name + ':sequence" />' +
                       '<input type="hidden" name="__end__" value="' + sequence_name + ':sequence" />' +
                       '</div>'+
-                      '<ul class="dynatree-readonly"><li class="head"></li></ul>'));
+                      '<ul class="dynatree-readonly"><li class="head">&nbsp;</li></ul>'));
     }else{
       target.append($('<div class="hidden-data"></div>'+
-                      '<ul class="dynatree-readonly"><li class="head"></li></ul>'));
+                      '<ul class="dynatree-readonly"><li class="head">&nbsp;</li></ul>'));
     }
     
     target.find('.dynatree-container').addClass('popupbox').hide().draggable().resizable().prepend('<div class="closeme">x</div>');
