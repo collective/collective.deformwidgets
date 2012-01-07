@@ -79,7 +79,11 @@ class SingleSelectDynatreeWidget(deform.widget.SelectWidget):
             list if readonly is set to false
         """
         if readonly:
-            return self.vocabulary.get_captions_for_keys(cstruct or [])
+            retval = []
+            for key in cstruct or []:
+                term = self.vocabulary.getTermById(key)
+                retval.append(self.vocabulary.getTermCaption(term))
+            return retval
         else:
             return []
 

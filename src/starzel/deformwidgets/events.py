@@ -9,7 +9,7 @@ def register_widget_resources(event):
     deform.widget.default_resource_registry.set_js_resources(\
                     'jquery.dynatree', None)
     own_templates = resource_filename(__name__, 'widget_templates')
-    search_path = deform.Form.default_renderer.loader.search_path + \
-        (own_templates, )
+    search_path = (own_templates, ) + \
+        deform.Form.default_renderer.loader.search_path
 
     deform.Form.set_zpt_renderer(search_path)
