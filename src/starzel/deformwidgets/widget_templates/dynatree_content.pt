@@ -1,0 +1,46 @@
+<div class="dynatree-atwidget" id="${field.oid}">
+  <div class="editornote">
+    ${description | None}
+  </div>
+  <div class="flatlist_container">
+    <div class="flatlist_template">
+      <div class="flatlist_item" key="{{ key }}"><span class="delete">X</span>&nbsp;{{ title }}</div>
+    </div>
+  </div>
+  <div class="dynatree_filter">
+    <input type="text" class="filter" />
+  </div>
+  <div class="collective-dynatree-tree">Tree</div>
+  <div class="dynatree_ajax_vocabulary hiddenStructure" 
+       tal:content="string:${site_url}/@@dynatree_content" />
+  <div class="dynatree_parameters hiddenStructure" 
+       tal:content="string:sparse,True/flatlist,True/checkbox,True'" />
+  <input type="hidden"
+         name="__start__"
+         value="${fieldName}:sequence">
+    <span class="hiddeninput">
+      <input type="hidden" class="template" data-name="${fieldName}" name="{{ name }}" value="{{ value }}" />
+      <input type="hidden"
+             class="hiddeninput selected"
+             name=""
+             value=""
+             tal:attributes="name fieldName;
+                             value value;"
+             tal:repeat="value values"
+             />
+    </span>
+  <input type="hidden"
+         name="__end__"
+         value="${fieldName}:sequence">
+  <div class="ui_controls">
+    <div class="sparse">Sparse</div>
+  </div>
+  <script type="text/javascript">
+    deform.addCallback(
+      '${field.oid}',
+      function(oid) {
+        starzel_deformwidgets.initDynaTreeContentBrowser(object_provides_filter="${object_provides_filter}");
+      }
+    );
+  </script>
+</div>

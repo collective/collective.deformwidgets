@@ -1,0 +1,6 @@
+<span tal:omit-tag="">
+    <ul id="${field.oid}">
+        <li tal:content="value" tal:repeat="value preselected_values">
+        </li>
+    </ul>
+</span>

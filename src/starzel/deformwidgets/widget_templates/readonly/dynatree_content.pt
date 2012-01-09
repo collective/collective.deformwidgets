@@ -1,0 +1,17 @@
+<div class="dynatree-atwidget" id="${field.oid}">
+  <div class="editornote">
+    ${description | None}
+  </div>
+  <div class="flatlist_container">
+    <div class="flatlist_item"
+         tal:repeat="title python:titles"
+         tal:content="title">title</div>
+  </div>
+  <script type="text/javascript">
+    deform.addCallback(
+      '${field.oid}',
+      function(oid) {
+      }
+    );
+  </script>
+</div>

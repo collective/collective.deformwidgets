@@ -1,0 +1,5 @@
+<p tal:repeat="(value, description) field.widget.values" i18n:domain="deform">
+  <span tal:omit-tag="" tal:condition="value == cstruct">
+    <span>${description}</span>
+  </span>
+</p>

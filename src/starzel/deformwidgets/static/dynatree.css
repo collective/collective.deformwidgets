@@ -29,3 +29,11 @@
     color:red;
 }
 
+.flatlist_container .flatlist_item{
+    display: inline;
+}
+
+.flatlist_template{
+    display: None;
+}
+
