@@ -195,7 +195,6 @@ _.templateSettings = {
             var tmpl = this.el.find(".template");
             this.name = tmpl.attr("data-name");
             this.template = _.template(tmpl.wrap('<span />').parent().html());
-            this.template.attr({'class': 'hiddeninput selected'});
             this.el.find(".template").remove();
             this.model.bind("change:selected", this.render);
         },
