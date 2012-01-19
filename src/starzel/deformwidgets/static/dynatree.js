@@ -101,7 +101,7 @@ _.templateSettings = {
                     }
                 }
                 var retv = _.clone(node);
-                retv.children = map_no_false(retval.children, remove_non_matching);
+                retv.children = map_no_false(retv.children, remove_non_matching);
                 return retv;
             }
             function show_selected(node){
@@ -195,6 +195,8 @@ _.templateSettings = {
             var tmpl = this.el.find(".template");
             this.name = tmpl.attr("data-name");
             this.template = _.template(tmpl.wrap('<span />').parent().html());
+            this.template.attr({'class': 'hiddeninput selected'});
+            this.el.find(".template").remove();
             this.model.bind("change:selected", this.render);
         },
         render: function(){

@@ -19,7 +19,7 @@
          name="__start__"
          value="${fieldName}:sequence">
     <span class="hiddeninput">
-      <span type="hidden" class="template" data-name="${fieldName}" name="{{ name }}-template" value="{{ value }}" />
+      <input type="hidden" class="template" data-name="${fieldName}" name="{{ name }}" value="{{ value }}"></input>
       <input type="hidden"
              class="hiddeninput selected"
              name=""
@@ -27,7 +27,7 @@
              tal:attributes="name fieldName;
                              value value;"
              tal:repeat="value values"
-             />
+             ></input>
     </span>
   <input type="hidden"
          name="__end__"
