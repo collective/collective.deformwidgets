@@ -479,6 +479,7 @@ _.templateSettings = {
                                            selected: _.filter(jqthis.find("input.selected").map(function(){return $(this).val();}),
                                                               function(elem){return elem;}),
                                            params: jqthis.find('.dynatree_parameters').text(),
+                                           sparse: true,
                                            object_provides: object_provides,
                                            name: jqthis.find('input.selected').attr('id')
                                           });

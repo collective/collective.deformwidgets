@@ -29,6 +29,11 @@
     color:red;
 }
 
+#content ul.dynatree-container li{
+    margin: 0;
+    padding: 1px 0 0;
+}
+
 .flatlist_container .flatlist_item{
     display: inline;
 }
