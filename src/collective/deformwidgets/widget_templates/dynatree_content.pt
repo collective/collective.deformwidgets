@@ -39,7 +39,7 @@
     deform.addCallback(
       '${field.oid}',
       function(oid) {
-        starzel_deformwidgets.initDynaTreeContentBrowser(object_provides_filter="${object_provides_filter}");
+        collective_deformwidgets.initDynaTreeContentBrowser(object_provides_filter="${object_provides_filter}");
       }
     );
   </script>

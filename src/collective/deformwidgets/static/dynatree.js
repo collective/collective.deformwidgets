@@ -314,8 +314,8 @@ _.templateSettings = {
 
 
 
-    if(!window.starzel_deformwidgets){window.starzel_deformwidgets = {};}
-    window.starzel_deformwidgets.initDynaTree = function(oid, children, presetKeys, selectMode, sequence_name, sequence_child_name){
+    if(!window.collective_deformwidgets){window.collective_deformwidgets = {};}
+    window.collective_deformwidgets.initDynaTree = function(oid, children, presetKeys, selectMode, sequence_name, sequence_child_name){
         var target = $('#' + oid);
         if(!target.length){
             throw new ReferenceError("Targetelement #" + oid + " does not exist!");
@@ -471,7 +471,7 @@ _.templateSettings = {
 
 
     };
-    window.starzel_deformwidgets.initDynaTreeContentBrowser = function(object_provides) {
+    window.collective_deformwidgets.initDynaTreeContentBrowser = function(object_provides) {
         $('.dynatree-atwidget').each(function () {
 	    // get parameters
 	    var jqthis = $(this);
