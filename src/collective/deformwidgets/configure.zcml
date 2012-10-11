@@ -7,7 +7,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="starzel.deformwidgets"
+      title="collective.deformwidgets"
       directory="profiles/default"
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"

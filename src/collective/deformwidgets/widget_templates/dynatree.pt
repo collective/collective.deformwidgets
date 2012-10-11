@@ -8,7 +8,7 @@
       deform.addCallback(
         '${field.oid}',
         function(oid) {
-            starzel_deformwidgets.initDynaTree(oid, ${tree}, ${preselected}, ${select_mode}, "${item_name}", "${item_child_name}");
+            dynatree_deformwidgets.initDynaTree(oid, ${tree}, ${preselected}, ${select_mode}, "${item_name}", "${item_child_name}");
 
         }
       );

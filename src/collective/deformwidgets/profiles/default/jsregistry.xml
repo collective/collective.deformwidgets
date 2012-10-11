@@ -2,19 +2,19 @@
   <javascript cacheable="True" compression="True" cookable="True"
               enabled="True" inline="False" expression=""
               insert-top=""
-              id="++resource++starzel.deformwidgets/underscore.js"/>
+              id="++resource++collective.deformwidgets/underscore.js"/>
 
   <javascript cacheable="True" compression="True" cookable="True"
               enabled="True" inline="False" expression=""
               insert-after="jquery.js"
-              id="++resource++starzel.deformwidgets/backbone.js"/>
+              id="++resource++collective.deformwidgets/backbone.js"/>
   <javascript authenticated="False" cacheable="True" compression="safe"
               conditionalcomment="" cookable="True" enabled="on" expression=""
-              insert-after="++resource++starzel.deformwidgets/jquery.dynatree.js"
-              id="++resource++starzel.deformwidgets/dynatree.js" inline="False"/>
+              insert-after="++resource++collective.deformwidgets/jquery.dynatree.js"
+              id="++resource++collective.deformwidgets/dynatree.js" inline="False"/>
   <javascript authenticated="False" cacheable="True" compression="safe"
               conditionalcomment="" cookable="True" enabled="on" expression=""
               insert-after="++resource++jquery-ui/jquery.ui.widget.min.js"
-              id="++resource++starzel.deformwidgets/jquery.dynatree.js" inline="False"/>
+              id="++resource++collective.deformwidgets/jquery.dynatree.js" inline="False"/>
 
 </object>
